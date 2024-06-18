@@ -13,4 +13,18 @@ package com.moon.designpattern.creational.singleton;
  * </pre>
  */
 public class Singleton {
+    // add a private static field to the class for storing the singleton instance
+    private static Singleton instance;
+
+    // make a constructor private
+    private Singleton() {}
+
+    // declare a public static creation method for getting the singleton instance
+    public static Singleton getInstance() {
+        // lazy initialization
+        if(instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
 }
