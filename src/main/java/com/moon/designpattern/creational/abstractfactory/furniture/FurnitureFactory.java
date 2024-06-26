@@ -1,4 +1,4 @@
-package com.moon.designpattern.creational.abstractfactory;
+package com.moon.designpattern.creational.abstractfactory.furniture;
 
 /**
  * <pre>
